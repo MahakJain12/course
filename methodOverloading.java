@@ -1,4 +1,4 @@
-class calculator {
+class perimeter {
     public int sum(int num1){
         return(4*num1);
     }
@@ -9,9 +9,9 @@ class calculator {
 
 class methodOverloading{
     public static void main(String [] args){
-       calculator calc = new calculator();
-        int sq = calc.sum(5);
-        int rt = calc.sum(5,10);
+       perimeter peri = new perimeter();
+        int sq = peri.sum(5);
+        int rt = peri.sum(5,10);
         System.out.println("square : " + sq);
         System.out.println("rectangle : " +rt);
     }
