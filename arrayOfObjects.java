@@ -30,5 +30,11 @@ class arrayOfObjects{
             System.out.println(s[i].name +" " +s[i].rollno + " "+ s[i].marks);
 
         }
+
+        //other way
+        for(Student a : s){
+            System.out.println(a.name +" " +a.rollno + " "+ a.marks);
+
+        }
      }
-}
+} 
