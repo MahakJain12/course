@@ -3,6 +3,8 @@ package com.example.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.example.utils.Log;
+
 public class LoginPage1 {
     private WebDriver driver;
     private By usernameTextBox = By.id("Email");
@@ -14,6 +16,7 @@ public class LoginPage1 {
     }
 
     public void enterUsername(String username) {
+        Log.info("enetering username");
         driver.findElement(usernameTextBox).clear();
         driver.findElement(usernameTextBox).sendKeys(username);
     }

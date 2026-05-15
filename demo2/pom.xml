@@ -39,6 +39,20 @@
         <artifactId>testng</artifactId>
         <version>7.10.2</version> <!-- Use latest stable 7.x -->
     </dependency>
+
+    <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.26.0</version>
+    <scope>compile</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.26.0</version>
+    <scope>compile</scope>
+</dependency>
   </dependencies>
 
   <build>
