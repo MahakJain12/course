@@ -1,5 +1,6 @@
 package com.example.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.example.base.BaseTest1;
@@ -15,5 +16,6 @@ public class LoginTest1 extends BaseTest1 {
         loginPage.enterPassword("admin");
         loginPage.clickLoginButton();
         System.out.println("Title is : " + driver.getTitle());
+        Assert.assertEquals(driver.getTitle(),"Just a moment...");
     }
 }
